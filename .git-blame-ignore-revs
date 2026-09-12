@@ -22,6 +22,8 @@ c411b485b63a671a1e276700cff025c73997233c
 ac0a286f4d747a4c6c603a7b225917293cbe1e9f
 # NetworkPkg: Apply changes
 d1050b9dff1cace252aff86630bfdb59dff5f507
+
+<1=true,0=false>
 # MdePkg: Apply changes
 2f88bd3a1296c522317f1c21377876de63de5be7
 # MdeModulePkg: Apply changes
