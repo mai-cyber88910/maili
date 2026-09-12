@@ -1,16 +1,10 @@
 ==============
-EDK II Project
+Project2win by maili woo bell
 ==============
 
 A modern, feature-rich, cross-platform firmware development
 environment for the UEFI and PI specifications from www.uefi.org.
 
-.. image:: https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Ftianocore%2Fedk2-pytool-extensions%2Frefs%2Fheads%2Fmaster%2Fpyproject.toml&query=%24.%5B'requires-python'%5D&style=for-the-badge&logo=python&logoColor=ffd343&label=Minimum%20Python%20Version%20for%20CI&color=3776ab&link=https%3A%2F%2Fwww.python.org%2Fdownloads%2F
-   :alt: CI Minimum Python Version
-
-It is recommended to install this Python version to run the full set of scripts that enable CI in the project.
-
-Other Python requirements for build can be found in the `EDK II Build Instructions <https://www.tianocore.org/tianocore-wiki.github.io/build-tooling/build-workflows/edk_ii_tools_list.html>`__.
 
 Core CI Build Status
 --------------------
@@ -25,7 +19,7 @@ Ubuntu_CLANGPDB_                       |UbuClgCiBuild|   |UbuClgCiTest|   |UbuCl
 Ubuntu_CLANGDWARF_                     |UbuCdwCiBuild|   |UbuCdwCiTest|   |UbuCdwCiCoverage|
 ====================================== ================= ================ ===================
 
-`More CI Build information <.pytool/Readme.md>`__
+`More CI Build information 
 
 Platform CI Build Status
 ------------------------
@@ -51,67 +45,12 @@ EmulatorPkg_Win_CLANGPDB_     | X64             |emW64cd|     |emW64cr|     |emW
 |                             | X64 FULL        |emW64cfd|    |emW64cfr|    |emW64cfn|
 ============================= ================= ============= ============= ==============
 
-Ubuntu GCC
-``````````
-
-============================= ================= ============= ============= ==============
- Toolchain                    CONFIG            DEBUG         RELEASE       NOOPT
-============================= ================= ============= ============= ==============
-ArmVirtPkg_Ubuntu_GCC_        | AARCH64         |avAArch64du| |avAArch64ru| |avAArch64nu|
-EmulatorPkg_Ubuntu_GCC_       | X64             |em64du|      |em64ru|      |em64nu|
-|                             | X64 FULL        |em64fdu|     |em64fru|     |em64fnu|
-OvmfPkg_Ubuntu_GCC_           | X64             |op64du|      |op64ru|      |op64nu|
-============================= ================= ============= ============= ==============
-
-|TCBZ_2639|_ - EmulatorPkg Ubuntu GCC Segfaults during execution.
-
-Ubuntu CLANGPDB
-```````````````
-
-============================= ================= ============== ============== ==============
- Toolchain                    CONFIG            DEBUG          RELEASE        NOOPT
-============================= ================= ============== ============== ==============
-ArmVirtPkg_Ubuntu_CLANGPDB_   | AARCH64         |avAArch64cpu| |avAArch64rpu| |avAArch64npu|
-OvmfPkg_Ubuntu_CLANGPDB_      | X64             |opU64cpd|     |opU64cpr|     |opU64cpn|
-============================= ================= ============== ============== ==============
-
-Ubuntu CLANGDWARF
-`````````````````
-
-============================== ================= ============== ============== ==============
- Toolchain                     CONFIG            DEBUG          RELEASE        NOOPT
-============================== ================= ============== ============== ==============
-ArmVirtPkg_Ubuntu_CLANGDWARF_  | AARCH64         |avAArch64cdu| |avAArch64rdu| |avAArch64ndu|
-EmulatorPkg_Ubuntu_CLANGDWARF_ | X64             |emU64cdd|     |emU64cdr|     |emU64cdn|
-|                              | X64 FULL        |emU64cdfd|    |emU64cdfr|    |emU64cdfn|
-OvmfPkg_Ubuntu_CLANGDWARF_     | X64             |opU64cdd|     |opU64cdr|     |opU64cdn|
-============================== ================= ============== ============== ==============
-
-`More ArmVirtPkg CI Build Information <ArmVirtPkg/PlatformCI/ReadMe.md>`__
-
-`More EmulatorPkg CI Build Information <EmulatorPkg/PlatformCI/ReadMe.md>`__
-
-`More OvmfPkg CI Build Information <OvmfPkg/PlatformCI/ReadMe.md>`__
-
+
 
 License Details
 ---------------
 
-The majority of the content in the EDK II open source project uses a
-`BSD-2-Clause Plus Patent License <License.txt>`__. The EDK II open
-source project contains the following components that are covered by additional
-licenses:
-
--  `BaseTools/Plugin/CodeQL/analyze <https://www.apache.org/licenses/LICENSE-2.0>`__
--  `BaseTools/Source/C/LzmaCompress <BaseTools/Source/C/LzmaCompress/LZMA-SDK-README.txt>`__
--  `BaseTools/Source/C/VfrCompile/Pccts <BaseTools/Source/C/VfrCompile/Pccts/RIGHTS>`__
--  `CryptoPkg/Library/BaseCryptLib/SysCall/inet_pton.c <CryptoPkg/Library/BaseCryptLib/SysCall/inet_pton.c>`__
--  `CryptoPkg/Library/Include/crypto/dso_conf.h <https://github.com/openssl/openssl/blob/e2e09d9fba1187f8d6aafaa34d4172f56f1ffb72/LICENSE>`__
--  `CryptoPkg/Library/Include/openssl/opensslconf.h <https://github.com/openssl/openssl/blob/e2e09d9fba1187f8d6aafaa34d4172f56f1ffb72/LICENSE>`__
--  `MdeModulePkg/Library/LzmaCustomDecompressLib <MdeModulePkg/Library/LzmaCustomDecompressLib/LZMA-SDK-README.txt>`__
--  `OvmfPkg <OvmfPkg/License.txt>`__
-
-The EDK II open source project uses content from upstream projects as git submodules
+The majority of the content in the EDK II open source  upstream projects as git submodules
 that are covered by additional licenses.
 
 -  `BaseTools/Source/C/BrotliCompress/brotli <https://github.com/google/brotli/blob/666c3280cc11dc433c303d79a83d4ffbdd12cc8d/LICENSE>`__
